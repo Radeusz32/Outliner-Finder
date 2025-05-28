@@ -1,5 +1,33 @@
-# Vue 3 + Vite
+# 🔍 Outlier Finder – aplikacja Vue
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Outlier Finder to nowoczesna aplikacja webowa stworzona w Vue 3 z Vue Router. Jej celem jest wykrycie liczby odstającej w tablicy liczb całkowitych – czyli jednej liczby, która różni się od reszty pod względem parzystości.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+---
+
+## ✨ Funkcje
+
+- ✅ Obsługa danych wejściowych w postaci ciągu liczb oddzielonych przecinkami
+- ✅ Detekcja jednej liczby odstającej w zbiorze (np. jedna parzysta wśród nieparzystych)
+- ✅ Dynamiczne przejście na stronę z wynikiem
+
+---
+
+## 🚀 Jak uruchomić projekt lokalnie
+
+### 1. Sklonuj repozytorium lub wejdź do folderu z projektem
+
+```bash
+cd Outlier\ Finder
+```
+
+### 2. Zainstaluj zależności
+
+```bash
+npm install
+```
+
+### 3. Uruchom w trybie deweloperskim
+
+```bash
+npm run dev
+```
