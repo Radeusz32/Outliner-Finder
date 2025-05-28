@@ -17,6 +17,10 @@ import { useRouter } from "vue-router";
 const input = ref("");
 const router = useRouter();
 
+function filterInput(event) {
+  input.value = event.target.value.replace(/[^\d,-]/g, "");
+}
+
 function searchOutlier() {
   const numbers = input.value
     .split(",")
