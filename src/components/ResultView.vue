@@ -1,3 +1,14 @@
+<script setup>
+import { useRoute, useRouter } from "vue-router";
+import { result } from "../store.js";
+
+const router = useRouter();
+
+function goBack() {
+  router.push("/");
+}
+</script>
+
 <template>
   <div class="result-view">
     <h2>Wartość odstająca:</h2>
@@ -5,19 +16,6 @@
     <button @click="goBack">Powrót</button>
   </div>
 </template>
-
-<script setup>
-import { useRoute, useRouter } from "vue-router";
-
-const route = useRoute();
-const router = useRouter();
-
-const result = route.params.result;
-
-function goBack() {
-  router.push("/");
-}
-</script>
 
 <style scoped>
 .result-view {

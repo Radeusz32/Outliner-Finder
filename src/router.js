@@ -4,7 +4,7 @@ import ResultView from "./components/ResultView.vue";
 
 const routes = [
   { path: "/", component: InputView },
-  { path: "/result/:result", name: "ResultView", component: ResultView },
+  { path: "/result", name: "ResultView", component: ResultView },
 ];
 
 const router = createRouter({

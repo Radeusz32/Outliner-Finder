@@ -1,18 +1,7 @@
-<template>
-  <div class="input-view">
-    <h2>Wprowadź liczby oddzielone przecinkami:</h2>
-    <input
-      v-model="input"
-      @input="filterInput"
-      placeholder="Np. 2,4,0,100,4,11,2602,36"
-    />
-    <button @click="searchOutlier">Wyszukaj</button>
-  </div>
-</template>
-
 <script setup>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+import { result } from "../store.js";
 
 const input = ref("");
 const router = useRouter();
@@ -46,10 +35,22 @@ function searchOutlier() {
     return;
   }
 
-  router.push({ name: "ResultView", params: { result: outlier } });
+  result.value = outlier;
+
+  router.push({ name: "ResultView" });
 }
 </script>
-
+<template>
+  <div class="input-view">
+    <h2>Wprowadź liczby oddzielone przecinkami:</h2>
+    <input
+      v-model="input"
+      @input="filterInput"
+      placeholder="Np. 2,4,0,100,4,11,2602,36"
+    />
+    <button @click="searchOutlier">Wyszukaj</button>
+  </div>
+</template>
 <style scoped>
 .input-view {
   display: flex;
