@@ -1,0 +1,11 @@
+{
+  "message": {
+    "heading": "Wprowadź liczby oddzielone przecinkami:",
+    "placeholder": "Np. 2,4,0,100,4,11,2602,36",
+    "button": "Wyszukaj",
+    "error_short": "Wprowadź co najmniej 3 liczby.",
+    "error_none": "Nie znaleziono jednoznacznej wartości odstającej.",
+    "result": "Wartość odstająca:",
+    "back": "Powrót"
+  }
+}

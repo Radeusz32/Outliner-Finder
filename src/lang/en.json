@@ -1,0 +1,11 @@
+{
+  "message": {
+    "heading": "Enter numbers separated by commas:",
+    "placeholder": "e.g. 2,4,0,100,4,11,2602,36",
+    "button": "Search",
+    "error_short": "Enter at least 3 numbers.",
+    "error_none": "No clear outlier found.",
+    "result": "Outlier value:",
+    "back": "Back"
+  }
+}
